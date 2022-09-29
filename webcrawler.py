@@ -21,7 +21,7 @@ while len(urls) > 0 and len(opened) < maxNumUrl:
         opened.append(curr_url)
 
     except Exception as ex:
-        print("Unable to access= "+curr_url)
+        print("Unable to access these urls= "+curr_url)
         print(ex)
         continue    #skip code below
 
@@ -34,7 +34,7 @@ while len(urls) > 0 and len(opened) < maxNumUrl:
         o_childurl = childUrl
         childUrl = urllib.parse.urljoin(seed_url, childUrl)
         print("seed_url=" + seed_url)
-        print("original childurl=" + o_childurl)
+        print("original childurl is this=" + o_childurl)
         print("childurl=" + childUrl)
         print("seed_url in childUrl=" + str(seed_url in childUrl))
         print("Have we seen this childUrl=" + str(childUrl in seen))
