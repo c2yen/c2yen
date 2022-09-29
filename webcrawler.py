@@ -45,6 +45,8 @@ while len(urls) > 0 and len(opened) < maxNumUrl:
         else:
             print("######")
 
+
+
 print("num. of URLs seen = %d, and scanned = %d" % (len(seen), len(opened)))
 print("List of seen URLs:")
 for seen_url in seen:
